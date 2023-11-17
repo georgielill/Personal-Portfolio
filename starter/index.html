@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
@@ -14,6 +14,10 @@
   <header>
     <h1>Lernantino</h1>
     <nav>
+      <a href="#AboutMe">About Me</a>
+      <a href="#Work">Work</a>
+      <a href="#ContactMe">Contact Me</a>
+      <a href="#Resume">Resume</a>
     </nav>
   </header>
 
@@ -25,20 +29,60 @@
   </section>
 
   <main class="page-wrapper">
-    <!-- about me -->
-    <section class="page-section" id="about">
-      <h2>About Me</h2>
+
+    <!-- <section id="mainGrid">
+      about me
+      <section class="mainGridArea" id="about-me">
+        <h2>About Me</h2>
+      </section>
+      <section class="mainGridArea" id="text">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam molestiae adipisci fugiat saepe expedita
+          veritatis delectus, reiciendis numquam, magni, vitae incidunt earum. A maxime officia molestias veniam, eos
+          eligendi dolore?</p>
+      </section>
+
+      <!-- portfolio container
+      <section class="mainGridArea" id="work">
+        <h2>Work</h2>
+      </section>
+
+      <section class="mainGridArea" id="projects">
+        <!-- flex box here  -->
+    </section> -->
+
+    <!-- contact
+      <section class="page-section contact" id="ContactMe">
+        <h2>Contact Me</h2>
+      </section> -->
+
     </section>
 
-    <!-- portfolio container -->
-    <section class="page-section" id="work">
-      <h2>Work</h2>
+    <section id="mainGrid">
+      <div id="about-me" class="mainGridArea">
+        <div class="heading">About Me</div>
+      </div>
+
+      <div id="text" class="mainGridArea">
+        <div class="heading"></div>
+      </div>
+
+      <div id="work" class="mainGridArea">
+        <div class="heading">Work</div>
+      </div>
+
+      <div id="projects" class="mainGridArea">
+        <div class="heading"></div>
+      </div>
+
+      <div id="contact-me" class="mainGridArea">
+        <div class="heading">Contact Me</div>
+      </div>
+
+      <div id="links" class="mainGridArea">
+        <div class="heading"></div>
+      </div>
     </section>
 
-    <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-    </section>
   </main>
 </body>
 

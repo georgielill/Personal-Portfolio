@@ -9,15 +9,65 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: end;
 }
 
 p {
   margin: 0;
+}
+
+h2 {
+  display: flex;
+  justify-content: end;
+}
+
+#mainGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "about-me text text"
+    "work projects projects"
+    "contact-me links links"
+}
+
+#about-me {
+  grid-area: about-me;
+}
+
+#text {
+  grid-area: text;
+}
+
+#work {
+  grid-area: work;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#contact-me {
+  grid-area: contact-me;
+}
+
+#links {
+  grid-area: links;
+}
+
+.mainGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
 }
