@@ -9,29 +9,68 @@ body {
   line-height: 1.5;
 }
 
-h1 {
-  margin: 0;
-}
-
-nav {
-  display: flex;
-  justify-content: end;
-}
-
-p {
-  margin: 0;
-}
-
-h2 {
-  display: flex;
-  justify-content: end;
-}
-
-#mainGrid {
-  margin: 0px 5%;
+#navGrid {
+  margin: none;
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #31343d;
+  grid-template-rows: 70px;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "name navigation"
+}
+
+#name {
+  background-color: #91ccce;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 10px;
+  font-size: 30px;
+  color: #31343d;
+}
+
+#navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Nav link styling */
+
+.navGridArea a {
+  color: #91ccce;
+  display: flex;
+  align-content: flex-end;
+  text-decoration: none;
+  border-bottom: 3px solid #91ccce;
+  margin: 3px;
+}
+
+.navGridArea {
+  margin: 5px;
+}
+
+
+
+/* p {
+  margin: 0;
+} */
+
+#subtitle {
+  display: flex;
+  justify-content: end;
+  margin-right: 50px;
+  background-color: #91ccce;
+}
+
+/* MAIN GRID AREA - WITH ABOUT ME, WORK CONTACT */
+#mainGrid {
+  margin: 2px;
+  display: grid;
+  grid-template-rows: 200px 500px 100px;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "about-me text text"
     "work projects projects"
@@ -44,6 +83,8 @@ h2 {
 
 #text {
   grid-area: text;
+  display: flex;
+  align-items: end;
 }
 
 #work {
@@ -67,7 +108,23 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   margin: 5px;
-  cursor: pointer;
-  display: grid;
-  align-content: end;
+  display: flex;
 }
+
+.heading {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/* #about-me .heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; */
+
+
+/* .mainGridArea #about-me {
+  display: flex;
+  align-items: flex-start;
+} */
