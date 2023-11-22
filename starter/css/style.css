@@ -79,43 +79,77 @@ body {
 
 #about-me {
   grid-area: about-me;
+  border-right: 3px solid #31343d;
 }
 
 #text {
   grid-area: text;
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0px;
 }
 
 #work {
   grid-area: work;
+  border-right: 3px solid #31343d;
 }
 
 #projects {
   grid-area: projects;
 }
 
+#projectGrid {
+  display: grid;
+  margin: 10px;
+  grid-template-rows: 250px 100px 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "surf-report surf-report"
+    "led-wall calculator"
+    "pastel-puzzle run-buddy"
+}
+
+#surf-report {}
+
+#led-wall {}
+
+#calculator {}
+
+#pastel-puzzle {}
+
+#run-buddy {}
+
 #contact-me {
   grid-area: contact-me;
+  border-right: 3px solid #31343d;
 }
 
 #links {
   grid-area: links;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border-bottom: 3px solid #31343d; */
 }
+
 
 .mainGridArea {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 5px;
+  margin: 10px;
   display: flex;
+  flex-direction: column;
 }
 
 .heading {
   display: block;
-  font-size: 20px;
+  font-size: 50px;
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
@@ -128,4 +162,8 @@ body {
 /* .mainGridArea #about-me {
   display: flex;
   align-items: flex-start;
+} */
+
+/* p {
+  margin: 0px;
 } */
