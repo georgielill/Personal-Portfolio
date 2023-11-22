@@ -86,6 +86,8 @@ body {
 
 .hero-banner {
   display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
   height: 200px;
   width: 100%;
   background-size: cover;
@@ -94,10 +96,9 @@ body {
   background-image: url("./images/02-hero-bg.jpg");
 }
 
+
 .hero-banner h2 {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
   margin-right: 50px;
   height: fit-content;
   background-color: #91ccce;
@@ -165,6 +166,12 @@ body {
 
 #surf-report {
   grid-area: surf-report;
+}
+
+#surf-report h4 {
+  display: flex;
+  background-color: #91ccce;
+
 }
 
 #led-wall {
