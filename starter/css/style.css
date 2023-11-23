@@ -165,30 +165,46 @@ body {
 }
 
 #surf-report {
-  grid-area: surf-report;
-}
-
-#surf-report h4 {
   display: flex;
-  background-color: #91ccce;
-
+  grid-area: surf-report;
+  background-image: url("./images/02-portfolio-2.jpg");
+  margin: 10px;
 }
 
 #led-wall {
   grid-area: led-wall;
+  background-image: url("./images/02-portfolio-1.jpg");
+  margin: 10px;
 }
 
 #calculator {
   grid-area: calculator;
+  background-image: url("./images/02-portfolio-3.jpg");
+  margin: 10px;
 }
 
 #pastel-puzzle {
   grid-area: pastel-puzzle;
+  background-image: url("./images/02-portfolio-4.jpg");
+  margin: 10px;
 }
 
 #run-buddy {
   grid-area: run-buddy;
+  background-image: url("./images/02-run-buddy.jpg");
+  margin: 10px;
 }
+
+.project-block {
+  display: flex;
+  align-items: end;
+}
+
+.project-block h4 {
+  background-color: #91ccce;
+  padding-bottom: 20px;
+}
+
 
 
 .links {
