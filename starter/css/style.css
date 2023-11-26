@@ -9,20 +9,9 @@ body {
   line-height: normal;
 }
 
-/* #navGrid {
-  margin: none;
-  display: grid;
-  background-color: #31343d;
-  grid-template-rows: 70px;
-  grid-template-columns: 1fr 3fr;
-  grid-template-areas:
-    "name navigation"
-} */
-
-/* .hero-banner {
-  width: 100px;
-  height: 50px;
-} */
+.page-wrapper {
+  margin-bottom: 20px;
+}
 
 .nav {
   display: flex;
@@ -60,29 +49,8 @@ body {
   color: #91ccce;
   text-decoration: none;
   border-bottom: 3px solid #91ccce;
+  scroll-behavior: smooth;
 }
-
-/* #navigation {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-left: 50px;
-  margin-right: 50px;
-} */
-
-/* Nav link styling */
-
-/* .navGridArea a {
-  align-content: flex-end;
-}
-
-.navGridArea {
-  margin: 5px;
-}
-
-/* p {
-  margin: 0;
-} */
 
 .hero-banner {
   display: flex;
@@ -128,14 +96,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0px;
+  margin: 10px;
+
 }
 
 #work {
   grid-area: work;
   border-right: 3px solid #31343d;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 #projects {
@@ -145,16 +114,20 @@ body {
 #contact-me {
   grid-area: contact-me;
   border-right: 3px solid #31343d;
+  margin-bottom: 2px;
 }
 
 .heading {
   display: flex;
   flex-direction: column;
   font-size: 30px;
+  text-align: right;
   justify-content: flex-start;
   align-items: flex-end;
   flex-wrap: wrap;
   padding-left: 100px;
+  padding-right: 10px;
+  scroll-behavior: smooth;
 }
 
 #projectGrid {
@@ -171,39 +144,50 @@ body {
 #surf-report {
   display: flex;
   grid-area: surf-report;
-  background-image: url("./images/02-portfolio-2.jpg");
+  border: 3px solid #91ccce;
   margin: 10px;
+}
+
+#surf-img {
+  display: flex;
+  background-image: url("./images/02-portfolio-2.jpg");
+  background-size: cover;
 }
 
 #led-wall {
   grid-area: led-wall;
-  background-image: url("./images/02-portfolio-1.jpg");
+  border: 3px solid #91ccce;
   margin: 10px;
   line-height: 3px;
+  background-image: url("./images/02-portfolio-1.jpg");
 }
 
 #led-wall p {
   font-size: 10px;
   font-weight: normal;
-
 }
 
 #calculator {
   grid-area: calculator;
-  background-image: url("./images/02-portfolio-3.jpg");
+  border: 3px solid #91ccce;
   margin: 10px;
+  background-image: url("./images/02-portfolio-3.jpg");
 }
+
 
 #pastel-puzzle {
   grid-area: pastel-puzzle;
   background-image: url("./images/02-portfolio-4.jpg");
+  border: 3px solid #91ccce;
   margin: 10px;
 }
 
 #run-buddy {
   grid-area: run-buddy;
   background-image: url("./images/02-run-buddy.jpg");
+  border: 3px solid #91ccce;
   margin: 10px;
+
 }
 
 .project-block {
@@ -215,14 +199,13 @@ body {
   background-color: #91ccce;
 }
 
-
-
 .links {
   grid-area: links;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+  margin-top: 30px;
 }
 
 .links a {
