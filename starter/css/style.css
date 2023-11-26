@@ -109,7 +109,7 @@ body {
   margin: 2px;
   display: grid;
   grid-template-rows: 200px 500px 100px;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 6fr;
   grid-template-areas:
     "about-me text text"
     "work projects projects"
@@ -119,6 +119,8 @@ body {
 #about-me {
   grid-area: about-me;
   border-right: 3px solid #31343d;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 #text {
@@ -132,6 +134,8 @@ body {
 #work {
   grid-area: work;
   border-right: 3px solid #31343d;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 #projects {
@@ -146,10 +150,11 @@ body {
 .heading {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 30px;
   justify-content: flex-start;
   align-items: flex-end;
-  padding-left: 300px;
+  flex-wrap: wrap;
+  padding-left: 100px;
 }
 
 #projectGrid {
@@ -180,6 +185,7 @@ body {
 #led-wall p {
   font-size: 10px;
   font-weight: normal;
+
 }
 
 #calculator {
@@ -225,28 +231,3 @@ body {
   padding: 0 5px;
   color: #31343d
 }
-
-
-/* .mainGridArea {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-} */
-
-/* #about-me .heading {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-end; */
-
-
-/* .mainGridArea #about-me {
-  display: flex;
-  align-items: flex-start;
-} */
-
-/* p {
-  margin: 0px;
-} */
