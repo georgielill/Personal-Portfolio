@@ -97,7 +97,6 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin: 10px;
-
 }
 
 #work {
@@ -127,7 +126,7 @@ body {
   flex-wrap: wrap;
   padding-left: 100px;
   padding-right: 10px;
-  scroll-behavior: smooth;
+  color: #31343d;
 }
 
 #projectGrid {
@@ -141,30 +140,48 @@ body {
     "pastel-puzzle run-buddy"
 }
 
+
+.project-block {
+  display: flex;
+  align-items: end;
+  text-decoration: none;
+}
+
+.project-block h4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #91ccce;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #31343d
+}
+
+.project-block p {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  font-weight: normal;
+}
+
 #surf-report {
   display: flex;
   grid-area: surf-report;
   border: 3px solid #91ccce;
   margin: 10px;
+  background-image: url("./images/02-portfolio-2.jpg");
 }
 
-#surf-img {
-  display: flex;
-  background-image: url("./images/02-portfolio-2.jpg");
-  background-size: cover;
+#surf-report p {
+  font-size: 10px;
+  font-weight: normal;
 }
 
 #led-wall {
   grid-area: led-wall;
   border: 3px solid #91ccce;
   margin: 10px;
-  line-height: 3px;
   background-image: url("./images/02-portfolio-1.jpg");
-}
-
-#led-wall p {
-  font-size: 10px;
-  font-weight: normal;
 }
 
 #calculator {
@@ -174,29 +191,18 @@ body {
   background-image: url("./images/02-portfolio-3.jpg");
 }
 
-
 #pastel-puzzle {
   grid-area: pastel-puzzle;
-  background-image: url("./images/02-portfolio-4.jpg");
   border: 3px solid #91ccce;
   margin: 10px;
+  background-image: url("./images/02-portfolio-4.jpg");
 }
 
 #run-buddy {
   grid-area: run-buddy;
-  background-image: url("./images/02-run-buddy.jpg");
   border: 3px solid #91ccce;
   margin: 10px;
-
-}
-
-.project-block {
-  display: flex;
-  align-items: end;
-}
-
-.project-block h4 {
-  background-color: #91ccce;
+  background-image: url("./images/02-run-buddy.jpg");
 }
 
 .links {
@@ -214,3 +220,5 @@ body {
   padding: 0 5px;
   color: #31343d
 }
+
+@media screen only {}
