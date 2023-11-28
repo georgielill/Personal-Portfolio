@@ -106,7 +106,7 @@ body {
   flex-direction: row;
   margin: 10px;
   height: 150px;
-  width: 800px;
+  width: 600px;
   background-image: url(./images/Me.JPG);
   background-size: cover;
   background-position: center;
@@ -236,38 +236,66 @@ body {
 
 /* @media screen only {} */
 
-@media only screen and (max-width: 1000px) {
+@media screen and (min-width:100px) and (max-width: 600px) {
   .right {
-    display: none;
+    flex-direction: column;
   }
-}
 
-@media only screen and (max-width: 600px) {
-  .left {
-    position: static;
-    margin: 20px;
+  .hero-banner {
+    width: 100%;
   }
-}
 
-#mainGrid {
-  grid-template-rows: 300px 300px 300px 300px 300px 300px;
-  grid-template-areas:
-    "about-me"
-    "text"
-    "work"
-    "projects"
-    "contact-me"
-    "links"
-}
+  .heading {
+    align-items: flex-start;
+    padding-left: 0px;
+    border-right: none;
+  }
 
-#projects {
-  grid-template-rows: 300px 300px 300px 300px 300px;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "surf-report"
-    "led-wall"
-    "calculator"
-    "pastel-puzzle"
-    "run-buddy"
-  ;
+  #about-me,
+  #work,
+  #contact-me {
+    border-right: none;
+    margin-bottom: none;
+    flex-direction: row;
+  }
+
+  #text,
+  #image {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+  }
+
+
+
+
+  .links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #mainGrid {
+    grid-template-rows: 100px 100px 100px 100px 700px 100px 100px;
+    grid-template-areas:
+      "about-me"
+      "image"
+      "text"
+      "work"
+      "projects"
+      "contact-me"
+      "links"
+  }
+
+
+  #projectGrid {
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 600px;
+    grid-template-areas:
+      "surf-report"
+      "led-wall"
+      "calculator"
+      "pastel-puzzle"
+      "run-buddy"
+    ;
+  }
 }
