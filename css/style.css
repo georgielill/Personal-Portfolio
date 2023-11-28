@@ -293,7 +293,7 @@ body {
 
   #projectGrid {
     grid-template-rows: 100px 100px 100px;
-    grid-template-columns: 600px;
+    grid-template-columns: 450px;
     grid-template-areas:
       "surf-report"
       "led-wall"
