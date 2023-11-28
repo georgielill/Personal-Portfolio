@@ -240,31 +240,34 @@ body {
   .right {
     display: none;
   }
+}
 
-  @media only screen and (max-width: 600px) {
-    .left {
-      position: static;
-      margin: 20px;
-    }
+@media only screen and (max-width: 600px) {
+  .left {
+    position: static;
+    margin: 20px;
+  }
+}
 
-    #mainGrid {
-      grid-template-areas:
-        "about-me"
-        "text"
-        "work"
-        "projects"
-        "contact-me"
-        "links"
-    }
+#mainGrid {
+  grid-template-rows: 300px 300px 300px 300px 300px 300px;
+  grid-template-areas:
+    "about-me"
+    "text"
+    "work"
+    "projects"
+    "contact-me"
+    "links"
+}
 
-    #projects {
-      grid-template-rows: 300px 300px 300px 300px 300px;
-      grid-template-columns: 1fr;
-      grid-template-areas:
-        "surf-report"
-        "led-wall"
-        "calculator"
-        "pastel-puzzle"
-        "run-buddy"
-      ;
-    }
+#projects {
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "surf-report"
+    "led-wall"
+    "calculator"
+    "pastel-puzzle"
+    "run-buddy"
+  ;
+}
